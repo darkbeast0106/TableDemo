@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tabledemo.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <TableView fx:id="personTable" prefHeight="200.0" prefWidth="200.0">
+     <columns>
+       <TableColumn fx:id="firstNameCol" prefWidth="101.0" text="firstName" />
+       <TableColumn fx:id="lastNameCol" prefWidth="95.0" text="lastName" />
+     </columns>
+   </TableView>
+
+    <Button onAction="#onHelloButtonClick" text="Hello!" />
+    <Label fx:id="infoText" />
+</VBox>
